@@ -1,98 +1,597 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+
+
+
+
+
+
+
+
+
+
+
 
   
-  <title>Rude3Knife&#39;s blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
   <meta name="description" content="Keep coding on Java, Python.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Rude3Knife&#39;s blog">
 <meta property="og:url" content="http://monitor4all.cn/index.html">
 <meta property="og:site_name" content="Rude3Knife&#39;s blog">
 <meta property="og:description" content="Keep coding on Java, Python.">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Rude3Knife&#39;s blog">
 <meta name="twitter:description" content="Keep coding on Java, Python.">
+
+
+
+
+
   
-    <link rel="alternate" href="/atom.xml" title="Rude3Knife&#39;s blog" type="application/atom+xml">
   
+  <link rel="canonical" href="http://monitor4all.cn/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Rude3Knife's blog</title>
   
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Rude3Knife&#39;s blog</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">欢迎来到我的博客</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://monitor4all.cn"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
   
-    <article id="post-Java后台开发知识点快速复习手册导航页" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/12/Java后台开发知识点快速复习手册导航页/" class="article-date">
-  <time datetime="2019-04-12T07:37:01.000Z" itemprop="datePublished">2019-04-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/12/Java后台开发知识点快速复习手册导航页/">Java后台开发知识点快速复习手册导航页</a>
-    </h1>
+    
   
 
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Rude3Knife's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://monitor4all.cn/2019/04/22/剑指offer题解-Java-队列的最大值-滑动窗口的最大值/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhendong"/>
+      <meta itemprop="description" content="Keep coding on Java, Python."/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rude3Knife's blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/22/剑指offer题解-Java-队列的最大值-滑动窗口的最大值/" class="post-title-link" itemprop="url">[剑指offer题解][Java]队列的最大值/滑动窗口的最大值</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-22 15:49:32 / 修改时间：15:51:58" itemprop="dateCreated datePublished" datetime="2019-04-22T15:49:32+08:00">2019-04-22</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><img src="https://img-blog.csdnimg.cn/2019020816245987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxeHg2NjYx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="面试知识点复习手册"><a href="#面试知识点复习手册" class="headerlink" title="面试知识点复习手册"></a>面试知识点复习手册</h1><p><strong>已发布知识点复习手册</strong></p>
+      
+
+      
+        
+          
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>众所周知，《剑指offer》是一本“好书”。</p>
+<p>为什么这么说？</p>
+<p>因为在技术面试中，它里面罗列的算法题在面试中出现的频率是非常非常高的。</p>
+<p>有多高，以我目前不多的面试来看，在所有遇到的面试算法题中，出现原题的概率大概能有6成，如果把基于原题的变种题目算上，那么这个出现概率能到达9成，10题中9题见过。</p>
+<p>至于为什么给“好书”这两个字打引号，因为这本书成了面试官的必备，如果考生不会这本书上的题目，就很可能得到面试官负面的评价。这本书快要成为评判学生算法能力的唯一标准，这使得考前突击变成了一个惯例，反而让投机倒把成了必要，并不一定能真正的考察考生的算法能力。</p>
+<p><strong>对于剑指offer题解这个系列，我的写文章思路是，对于看了文章的读者，能够：</strong></p>
+<ul>
+<li>迅速了解该题常见解答思路（奇技淫巧不包括在内，节省大家时间，实在有研究需求的人可以查阅其它资料）</li>
+<li>思路尽量贴近原书（例如书中提到的面试官经常会要求不改变原数组，或者有空间限制等，尽量体现在代码中，保证读者可以不漏掉书中细节）</li>
+<li>尽量精简话语，避免冗长解释</li>
+<li>给出代码可运行，注释齐全，对细节进行解释</li>
+</ul>
+<p><strong>快速找到我的《剑指offer题解》专栏：</strong></p>
+<ul>
+<li>公众号（Rude3Knife）：底部导航栏——剑指offer题解</li>
+<li>CSDN（@Rude3Knife）：剑指offer题解专栏</li>
+</ul>
+<h1 id="题目介绍"><a href="#题目介绍" class="headerlink" title="题目介绍"></a>题目介绍</h1><p>剑指offer面试题59题</p>
+<p>给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组{2,3,4,2,6,2,5,1}及滑动窗口的大小3，那么一共存在6个滑动窗口，他们的最大值分别为{4,4,6,6,6,5}； 针对数组{2,3,4,2,6,2,5,1}的滑动窗口有以下6个： {[2,3,4],2,6,2,5,1}， {2,[3,4,2],6,2,5,1}， {2,3,[4,2,6],2,5,1}， {2,3,4,[2,6,2],5,1}， {2,3,4,2,[6,2,5],1}， {2,3,4,2,6,[2,5,1]}。</p>
+<h1 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h1><h2 id="蛮力法"><a href="#蛮力法" class="headerlink" title="蛮力法"></a>蛮力法</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>扫描窗口k，得到最大值。对于长度为n的数组，算法时间复杂度O（nk）</p>
+<p>显然不是最优解。</p>
+<h2 id="用两个栈实现队列"><a href="#用两个栈实现队列" class="headerlink" title="用两个栈实现队列"></a>用两个栈实现队列</h2><h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>面试题30中，我们实现过用两个栈实现了队列，可以在O（1）时间得到栈的最大值，也就可以得到队列的最大值。</p>
+<p>这样总的时间复杂度O（n）</p>
+<p>但是这样的思路写代码，等于同时要写两个题目，面试时间可能不允许。</p>
+<h2 id="双端队列"><a href="#双端队列" class="headerlink" title="双端队列"></a>双端队列</h2><h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>参考解释：</p>
+<p><a href="https://cuijiahua.com/blog/2018/02/basis_64.html" target="_blank" rel="noopener">https://cuijiahua.com/blog/2018/02/basis_64.html</a></p>
+<p>数组的第一个数字是2，把它存入队列中。第二个数字是3，比2大，所以2不可能是滑动窗口中的最大值，因此把2从队列里删除，再把3存入队列中。第三个数字是4，比3大，同样的删3存4。此时滑动窗口中已经有3个数字，而它的最大值4位于队列的头部。</p>
+<p>第四个数字2比4小，但是当4滑出之后它还是有可能成为最大值的，所以我们把2存入队列的尾部。下一个数字是6，比4和2都大，删4和2，存6。就这样依次进行，最大值永远位于队列的头部。</p>
+<p>但是我们怎样判断滑动窗口是否包括一个数字？应该在队列里存入数字在数组里的下标，而不是数值。当一个数字的下标与当前处理的数字的下标之差大于或者相等于滑动窗口大小时，这个数字已经从窗口中滑出，可以从队列头部把它删除。<strong>因此，我们既有可能从头部删除数字，又可能从尾部删除数字，所以要双端队列。</strong></p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/4/22/16a4391ae5167d6c?w=807&amp;h=391&amp;f=png&amp;s=100677" alt=""></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>注意点：</p>
+<ul>
+<li><p>ArrayDeque的几个API：pollFirst、peekFirst等</p>
+</li>
+<li><p>ArrayDeque保存的是下标</p>
+</li>
+<li><p>最新的数的下标是必定加进去的。</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.ArrayDeque;</span><br><span class="line">public class Solution &#123;</span><br><span class="line">    public ArrayList&lt;Integer&gt; maxInWindows(int [] num, int size)</span><br><span class="line">    &#123;</span><br><span class="line">        ArrayList&lt;Integer&gt; result = new ArrayList&lt;&gt;();</span><br><span class="line">        // 排除特殊情况，窗口的长度为0</span><br><span class="line">        if (size==0) return result;</span><br><span class="line">        </span><br><span class="line">        // 滑动窗口最左边数的index</span><br><span class="line">        int begin;</span><br><span class="line">        // 建立一个双端队列</span><br><span class="line">        ArrayDeque&lt;Integer&gt; q = new ArrayDeque&lt;&gt;();</span><br><span class="line">        for(int i=0;i&lt;num.length;i++)&#123;</span><br><span class="line">            // begin是窗口起始位置</span><br><span class="line">            begin = i-size+1;</span><br><span class="line">            // 队列空，直接加入</span><br><span class="line">            if(q.isEmpty())</span><br><span class="line">                q.add(i);</span><br><span class="line">            // 若队列最左边值已经不在窗口内，直接删除</span><br><span class="line">            else if(begin &gt; q.peekFirst())</span><br><span class="line">                q.pollFirst();</span><br><span class="line">            </span><br><span class="line">            // 从队尾开始比较，把所有比他小的值丢掉</span><br><span class="line">            while((!q.isEmpty()) &amp;&amp; num[q.peekLast()] &lt;= num[i])</span><br><span class="line">                q.pollLast();</span><br><span class="line">            // 随后再把它放进去</span><br><span class="line">            q.add(i);</span><br><span class="line">            </span><br><span class="line">            // 若窗口起始位置在数组的0位置上或者之后（窗口是完整大小的），才计算窗口的有效最大值</span><br><span class="line">            if(begin&gt;=0)&#123;</span><br><span class="line">                // 永远是队列最左边最大，加入结果集</span><br><span class="line">                result.add(num[q.peekFirst()]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>采用双端队列，非常巧妙地一题。</p>
+<h1 id="关注我"><a href="#关注我" class="headerlink" title="关注我"></a>关注我</h1><p>我目前是一名后端开发工程师。技术领域主要关注后端开发，数据爬虫，数据安全，5G，物联网等方向。</p>
+<p>微信：yangzd1102</p>
+<p>Github：<a href="https://github.com/qqxx6661" target="_blank" rel="noopener">@qqxx6661</a></p>
+<p>个人博客：</p>
+<ul>
+<li>CSDN：<a href="http://blog.csdn.net/qqxx6661" target="_blank" rel="noopener">@qqxx6661</a></li>
+<li>知乎：<a href="https://www.zhihu.com/people/yang-zhen-dong-1/" target="_blank" rel="noopener">@Zhendong</a></li>
+<li>简书：<a href="https://www.jianshu.com/u/b5f225ca2376" target="_blank" rel="noopener">@蛮三刀把刀</a></li>
+<li>掘金：<a href="https://juejin.im/user/5b48015ce51d45191462ba55" target="_blank" rel="noopener">@蛮三刀把刀</a></li>
+</ul>
+<h3 id="原创博客主要内容"><a href="#原创博客主要内容" class="headerlink" title="原创博客主要内容"></a>原创博客主要内容</h3><ul>
+<li>Java知识点复习全手册</li>
+<li>Leetcode算法题解析</li>
+<li>剑指offer算法题解析</li>
+<li>SpringCloud菜鸟入门实战系列</li>
+<li>SpringBoot菜鸟入门实战系列</li>
+<li>Python爬虫相关技术文章</li>
+<li>后端开发相关技术文章</li>
+</ul>
+<h3 id="个人公众号：Rude3Knife"><a href="#个人公众号：Rude3Knife" class="headerlink" title="个人公众号：Rude3Knife"></a>个人公众号：Rude3Knife</h3><p><img src="https://user-gold-cdn.xitu.io/2019/4/19/16a34a96b401f1ef?w=263&amp;h=265&amp;f=png&amp;s=44022" alt="个人公众号：Rude3Knife"></p>
+<p><strong>如果文章对你有帮助，不妨收藏起来并转发给您的朋友们~</strong></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://monitor4all.cn/2019/04/12/Java后台开发知识点快速复习手册导航页/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhendong"/>
+      <meta itemprop="description" content="Keep coding on Java, Python."/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rude3Knife's blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/12/Java后台开发知识点快速复习手册导航页/" class="post-title-link" itemprop="url">Java后台开发知识点快速复习手册导航页</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-12 15:37:01" itemprop="dateCreated datePublished" datetime="2019-04-12T15:37:01+08:00">2019-04-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-22 15:46:57" itemprop="dateModified" datetime="2019-04-22T15:46:57+08:00">2019-04-22</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="面试知识点复习手册"><a href="#面试知识点复习手册" class="headerlink" title="面试知识点复习手册"></a>面试知识点复习手册</h1><p><strong>已发布知识点复习手册</strong></p>
 <ul>
 <li><a href="https://blog.csdn.net/qqxx6661/article/details/81709324" target="_blank" rel="noopener">[Python/Java]Leetcode题解分类汇总（前150题）</a></li>
 <li><a href="https://blog.csdn.net/qqxx6661/article/details/86572953" target="_blank" rel="noopener">Java基础知识点面试手册</a></li>
@@ -133,42 +632,148 @@
 <p><a href="https://www.jianshu.com/u/b5f225ca2376" target="_blank" rel="noopener">https://www.jianshu.com/u/b5f225ca2376</a></p>
 <h3 id="个人公众号：Rude3Knife"><a href="#个人公众号：Rude3Knife" class="headerlink" title="个人公众号：Rude3Knife"></a>个人公众号：Rude3Knife</h3><p><img src="https://img-blog.csdnimg.cn/20190226163135670.png" alt="个人公众号：Rude3Knife"><br><strong>如果文章对你有帮助，不妨收藏起来并转发给您的朋友们~</strong></p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://monitor4all.cn/2019/04/12/Java后台开发知识点快速复习手册导航页/" data-id="cjudrq81700009c2w1u20ecfl" class="article-share-link">Share</a>
+
+    
+
+    
+    
+    
+
+    
+
+    
       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
   </div>
   
-</article>
+  
+  
+  </article>
 
+
+    
+      
 
   
-    <article id="post-双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/12/双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解/" class="article-date">
-  <time datetime="2019-04-12T07:30:37.000Z" itemprop="datePublished">2019-04-12</time>
-</a>
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://monitor4all.cn/2019/04/12/双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhendong"/>
+      <meta itemprop="description" content="Keep coding on Java, Python."/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rude3Knife's blog"/>
+    </span>
+
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/12/双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解/">双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/12/双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解/" class="post-title-link" itemprop="url">双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解</a>
+              
+            
+          </h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-12 15:30:37 / 修改时间：15:31:16" itemprop="dateCreated datePublished" datetime="2019-04-12T15:30:37+08:00">2019-04-12</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><strong>你能阅读到：</strong></p>
+      
+
+      
+        
+          
+            <p><strong>你能阅读到：</strong></p>
 <ul>
 <li>一个双非从18年3月春招开始，一路被虐到怀疑人生（春招实习面试全挂），直到9月份面试较为顺利，拿到一些offer期间的心路历程和复习总结。</li>
 <li>对企业究竟需要什么样的应届生的理解</li>
@@ -285,95 +890,302 @@
 <p>我的Github：<a href="https://github.com/qqxx6661" target="_blank" rel="noopener">https://github.com/qqxx6661</a></p>
 <p>我的博客：<a href="https://blog.csdn.net/qqxx6661" target="_blank" rel="noopener">https://blog.csdn.net/qqxx6661</a></p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://monitor4all.cn/2019/04/12/双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解/" data-id="cjudrq81f00019c2w7its37xx" class="article-share-link">Share</a>
+
+    
+
+    
+    
+    
+
+    
+
+    
       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
   </div>
   
-</article>
+  
+  
+  </article>
 
+
+    
+  </section>
 
   
 
 
-</section>
+          </div>
+          
+
+        </div>
         
-          <aside id="sidebar">
+          
   
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/04/12/Java后台开发知识点快速复习手册导航页/">Java后台开发知识点快速复习手册导航页</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/12/双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解/">双非硕士的春招秋招经验总结——对校招，复习以及面试心态的理解</a>
-          </li>
-        
-      </ul>
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Zhendong</p>
+              <div class="site-description motion-element" itemprop="description">Keep coding on Java, Python.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
     </div>
-  </div>
-
+  </aside>
   
-</aside>
+
+
         
       </div>
-      <footer id="footer">
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhendong</span>
+
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 Zhendong<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
+
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+
+<div class="BbeiAn-info">
+苏ICP备 -
+<a target="_blank"  href="http://www.miitbeian.gov.cn/">19019529号</a>
+</a>
+</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
 
+    
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
+    
   </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
